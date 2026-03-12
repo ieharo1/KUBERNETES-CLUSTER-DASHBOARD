@@ -1,31 +1,65 @@
-# 🪟 Repositorio Windows Forms C#
+# 🖥️ Kubernetes Cluster Dashboard
 
-Repositorio de Windows Forms en C# desarrollado por **Isaac Esteban Haro Torres**.
-
----
-
-## 📝 Descripción
-
-Aplicaciones de escritorio usando Windows Forms con C#.
+Aplicacion Windows Forms para monitorear un cluster Kubernetes.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## ✅ Descripcion
 
-- C#
-- Windows Forms
+Dashboard de escritorio que consume la API de Kubernetes y muestra estado de pods, servicios y workers.
+
+### ¿Que hace este proyecto?
+
+- **Dashboard**: Resumen del cluster
+- **Pods activos**: Lista de pods y estado
+- **Workers**: Numero de nodos activos
+- **Servicios**: Cantidad de servicios desplegados
 
 ---
 
-## 👨‍💻 Desarrollado por Isaac Esteban Haro Torres
+## ✨ Caracteristicas Principales
 
-**Ingeniero en Sistemas · Full Stack · Automatización · Data**
+| Caracteristica | Descripcion |
+|----------------|-------------|
+| **Windows Forms** | App de escritorio |
+| **Kubernetes API** | Consumo via HTTP |
+| **Vista de pods** | Estado y namespace |
+| **Metricas basicas** | Servicios y workers |
 
-- 📧 Email: zackharo1@gmail.com
-- 📱 WhatsApp: 098805517
-- 💻 GitHub: https://github.com/ieharo1
-- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
+---
+
+## 🛠️ Stack Tecnologico
+
+- **C# / .NET 8**
+- **Windows Forms**
+- **Kubernetes API**
+
+---
+
+## 📦 Instalacion y Uso
+
+1) Ejecutar proxy de Kubernetes:
+
+```bash
+kubectl proxy
+```
+
+2) Abrir el proyecto en Visual Studio y ejecutar.
+
+---
+
+## 🗂️ Estructura del Proyecto
+
+```
+kubernetes-cluster-dashboard
+├── KubernetesClusterDashboard.csproj
+├── Program.cs
+├── MainForm.cs
+├── KubernetesClient.cs
+└── README.md
+```
 
 ---
 
 © 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
+
